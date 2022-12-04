@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://sprites/items/chiken.png" type="Texture" id=1]
+[ext_resource path="res://scripts/item.gd" type="Script" id=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Sprite
+
+func _ready():
+	pass # Replace with function body.
+"
+
+[node name="item" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+script = SubResource( 1 )
