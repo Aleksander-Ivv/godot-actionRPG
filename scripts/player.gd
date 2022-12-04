@@ -1,6 +1,11 @@
 extends KinematicBody2D
 
 var speed = 200
+var items = 0
+
+func pick(item):
+	items += 1
+	get_parent().get_parent().update_label(items)
 
 func _ready():
 	pass # Replace with function body.

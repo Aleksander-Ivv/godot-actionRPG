@@ -19,9 +19,7 @@ func _process(delta):
 		zoomfactor = 1
 	elif zoomfactor < 1:
 		zoomfactor = 1
-		
-	print(zoomfactor)	
-	
+			
 
 func _input(event):
 	if event is InputEventMouseButton:
